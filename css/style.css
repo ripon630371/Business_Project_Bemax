@@ -229,6 +229,66 @@ label {
 	background-color: #ffffff;
 }
 
-
-
+/*header to menu start */
+.main_menu{}
+.main_menu ul{}
+.main_menu ul li{
+	display: inline-block;
+	margin-left: 40px;
+	position: relative;
+}
+.main_menu ul li a{
+	font-size: 15px;
+	color:#666;
+	padding: 50px 0px;
+	display: block;
+}
+.main_menu ul li:hover a{
+	color: #4272d7;
+}
+/*dropdown menu level 2*/
+.main_menu ul li ul.submenu {
+    position: absolute;
+    background: #171a21;
+    width: 260px;
+    border-top: 3px solid #4272d7;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    left: 0;
+    top:110px;
+}
+.main_menu ul li:hover ul.submenu{
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+}
+.main_menu ul li ul.submenu li{
+	display: block;
+	margin: 0;
+	border-bottom: 1px solid gray;
+}
+.main_menu ul li ul.submenu li:last-child{
+	border: 0;
+}
+.main_menu ul li ul.submenu li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.main_menu ul li ul.submenu li:hover > a{
+	background: #4272d7;
+}
+/*dropdown menu level 2*/
+.main_menu ul li ul.submenu li ul.submenu{
+	left: 100%;
+	margin-left: 5px;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.main_menu ul li ul.submenu li:hover> ul.submenu{
+	visibility: visible;
+	opacity: 1;
+}
 

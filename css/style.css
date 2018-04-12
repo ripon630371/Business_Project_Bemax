@@ -28,6 +28,7 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	transition: .5s;
 }
 .img {
 	max-width: 100%;
@@ -256,7 +257,7 @@ label {
     visibility: hidden;
     transition: .5s;
     left: 0;
-    top:110px;
+    top:110%;
 }
 .main_menu ul li:hover ul.submenu{
 	visibility: visible;
@@ -291,4 +292,43 @@ label {
 	visibility: visible;
 	opacity: 1;
 }
-
+/*mega_menu style*/
+.main_menu ul li .mega_menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 700px;
+	background:#171a21; 
+	border-top: 3px solid #4272d7;
+	opacity: 0;
+	visibility: hidden;
+	top:110%;
+	transition: .5s;
+}
+.main_menu ul li:hover .mega_menu{
+	visibility: visible;
+	opacity: 1;
+	top: 100%;
+}
+.main_menu ul li .mega_menu ul{
+	width: 33.33%;
+	float: left;
+	padding-right: 30px;
+}
+.main_menu ul li .mega_menu ul:last-child{
+	padding-right: 0px;
+}
+.main_menu ul li .mega_menu ul li{
+	margin: 0;
+	display: block;
+	border-bottom: 1px solid gray;
+}
+.main_menu ul li .mega_menu ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: .5s;
+}
+.main_menu ul li .mega_menu ul li a:hover{
+	background: #4272d7
+}

@@ -221,7 +221,7 @@ label {
 .bg-white {
 	background-color: #ffffff;
 }
-
+/*auto coding css style*/
 
 
 
@@ -245,6 +245,7 @@ label {
   background: #171a21 none repeat scroll 0 0;
   border-top: 3px solid #4272d7;
   left: 0;
+  margin-left: 7px;
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -291,6 +292,7 @@ label {
   transition: all 0.3s ease 0s;
   visibility: hidden;
   width: 700px;
+  margin-left: 7px;
 }
 .main-menu ul li:hover .mega-menu{opacity:1;visibility:visible;top:100%}
 .main-menu ul li .mega-menu ul {

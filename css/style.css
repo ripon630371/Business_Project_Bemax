@@ -120,7 +120,7 @@ ul {
 }
 li {
 	list-style: none
-}
+} 
 p {
 	font-size: 14px;
 	font-weight: normal;
@@ -167,6 +167,12 @@ label {
 }
 .separator {
 	border-top: 1px solid #f2f2f2
+}
+.section_padding{
+  padding: 50px 0px;
+}
+.section_margin{
+  margin:50px 0px;
 }
 /* button style */
 
@@ -225,7 +231,6 @@ label {
 
 
 
-
 .main-menu{}
 .main-menu ul{}
 .main-menu ul li {
@@ -245,7 +250,6 @@ label {
   background: #171a21 none repeat scroll 0 0;
   border-top: 3px solid #4272d7;
   left: 0;
-  margin-left: 7px;
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -253,12 +257,13 @@ label {
   transition: all 0.3s ease 0s;
   visibility: hidden;
   width: 260px;
-  z-index: 21;
+  z-index: 155;
+  margin-left: 7px;
 }
 .main-menu ul li:hover ul.submenu{
-	opacity:1;
-	visibility:visible;
-	top:100%;
+  opacity:1;
+  visibility:visible;
+  top:100%;
 }
 .main-menu ul li ul.submenu li {
   border-bottom: 2px solid #1e2128;
@@ -292,7 +297,6 @@ label {
   transition: all 0.3s ease 0s;
   visibility: hidden;
   width: 700px;
-  margin-left: 7px;
 }
 .main-menu ul li:hover .mega-menu{opacity:1;visibility:visible;top:100%}
 .main-menu ul li .mega-menu ul {
@@ -332,14 +336,14 @@ label {
 
 .search-form {
   background: #222 none repeat scroll 0 0;
-  opacity: 0;
   position: absolute;
   right: 0;
   top: 100%;
-  transition: all 0.3s ease 0s;
-  visibility: hidden;
   width: 245px;
-  z-index: 154;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 215;
 }
 .header-search:hover .search-form{opacity: 1;visibility: visible;}
 .search-form input {
@@ -387,7 +391,7 @@ label {
 }
 .slider-wrapper h1 {
   color: #fff;
-  font-size: 72px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 35px;
   text-transform: uppercase;
@@ -432,4 +436,24 @@ label {
 }
 .slider-active .owl-dot.active {
   background: #2059d3;
+}
+
+
+/* cta area */
+.cta-text p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.cta-text span {
+  font-size: 30px;
+}
+.hire-btn a {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 18px 47px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
 }

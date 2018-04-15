@@ -510,3 +510,50 @@ label {
 .features_content a span{
   margin-right: 2px;
 }
+
+/* services_area section */
+.section_title h2 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+.section_title h2::before {
+  position: absolute;
+  content: "";
+  background: #232222;
+  height: 2px;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+.single_service{
+  display: flex;
+}
+.service_icon i{
+  background: #4272d7;
+  font-size: 26px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.service_content{
+  padding-left: 20px;
+}
+.service_content h3{
+  font-size: 16px;
+  color: #555555;
+  font-weight: 700;
+}
+.service_content p{
+  color: #666666;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0;
+}

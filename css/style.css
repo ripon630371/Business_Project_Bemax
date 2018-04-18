@@ -1,6 +1,6 @@
 /*
   Theme Name: Name - Multipurpose HTML Template
-  Author: 
+  Author: Ripon Mia
   Support: admin@gmail.com
   Description: Creative  HTML5 template.
   Version: 1.0
@@ -399,8 +399,8 @@ label {
 .slider-wrapper a{}
 
 
-.slider-active{}
-.slider-active .owl-nav div {
+.nav-style{}
+.nav-style .owl-nav div {
   background: #fff none repeat scroll 0 0;
   font-size: 20px;
   height: 50px;
@@ -414,19 +414,19 @@ label {
   width: 50px;
   opacity: 0;visibility: hidden;;
 }
-.slider-active .owl-nav div.owl-next {
+.nav-style .owl-nav div.owl-next {
   left: auto;
   right: 30px;
 }
-.slider-active:hover .owl-nav div{opacity: 1;visibility: visible}
-.slider-active .owl-dots {
+.nav-style:hover .owl-nav div{opacity: 1;visibility: visible}
+.nav-style .owl-dots {
   bottom: 35px;
   left: 0;
   position: absolute;
   right: 0;
   text-align: center;
 }
-.slider-active .owl-dot {
+.nav-style .owl-dot {
   background: #ddd none repeat scroll 0 0;
   border-radius: 50%;
   display: inline-block;
@@ -434,10 +434,13 @@ label {
   margin: 0 2px;
   width: 10px;
 }
-.slider-active .owl-dot.active {
+.nav-style .owl-dot.active {
   background: #2059d3;
 }
-
+.nav-style .owl-nav div:hover{
+  background: #507bd6;
+  color: #fff;
+}
 
 /* cta area */
 .cta-text p {
@@ -556,4 +559,74 @@ label {
   font-size: 15px;
   line-height: 26px;
   margin: 0;
+}
+/* project_area section  */
+.project_wrapper{
+  position: relative;
+}
+.project_thum img{
+  width: 100%;
+}
+.project_thum{
+  position: relative;
+}
+.project_thum::before {
+  position: absolute;
+  content: "";
+  background: #507bd6;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  opacity: 0;
+}
+.project_wrapper:hover .project_thum::before{
+  opacity: 1;
+}
+.project_content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.project_wrapper:hover .project_content{
+  opacity: 1;
+  visibility: visible;
+}
+.project_content h4{
+  font-size: 15px;
+  font-weight: 700;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+}
+.project_content span{
+  font-size: 13px;
+  color: #cccccc;
+}
+.project_active.nav-style .owl-nav div {
+  left: -25px;
+ }
+.project_active.nav-style .owl-nav div.owl-next {
+  left: auto;
+  right: -25px;
+}
+.text-white.section_title h2 {
+  color: #fff;
+}
+.text-white.section_title h2::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  height: 2px;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
 }

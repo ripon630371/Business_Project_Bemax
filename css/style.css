@@ -656,3 +656,34 @@ label {
   margin-right: 12px;
   font-size: 25px;
 }
+/* Working With us_area */
+.Working_area{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Working_area p{
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+  line-height: 35px;
+  margin: 32px 0px;
+}
+.Working_area h2 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.Working_area h2::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 2px;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}

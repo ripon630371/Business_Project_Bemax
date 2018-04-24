@@ -630,3 +630,29 @@ label {
   margin: auto;
   right: 0;
 }
+/* Why Choose Us_area section */
+.video_bg{
+  position: relative;
+}
+.video_bg img {
+  width: 100%;
+}
+.video_bg a{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 62px;
+}
+.choose_list h3{
+  font-size: 16px;
+  color: #555555;
+  font-weight: 700;
+}
+.choose_list h3 i{
+  margin-right: 12px;
+  font-size: 25px;
+}
